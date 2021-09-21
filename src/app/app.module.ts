@@ -5,12 +5,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
-import { ClearNavbarComponent } from './clear-navbar/clear-navbar.component';
+import { ClearNavbarComponent } from './shared/clear-navbar/clear-navbar.component';
 import { WelcomeCardComponent } from './landing-page/welcome-card/welcome-card.component';
 import { ExampleSectionComponent } from './landing-page/example-section/example-section.component';
+import { LandingComponent } from './landing-page/landing/landing.component';
 
 @NgModule({
-  declarations: [AppComponent, ClearNavbarComponent, WelcomeCardComponent, ExampleSectionComponent],
+  declarations: [
+    AppComponent,
+    ClearNavbarComponent,
+    WelcomeCardComponent,
+    ExampleSectionComponent,
+    LandingComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
