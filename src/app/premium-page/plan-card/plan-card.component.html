@@ -1,0 +1,13 @@
+<div class="card" [ngClass]="{'selected': isSelected === true}">
+    <div class="recommended-label mat-body-2" *ngIf="isSelected" >
+        Save more with this offer!
+    </div>
+    <h1 class="period">{{periodicity}}</h1>
+    <div class="price">
+        <p>$</p>
+        <h1 class="mat-display-3">{{price}}</h1>
+        <p>99</p>
+    </div>
+    <p class="info"><ng-content></ng-content></p>
+    <button mat-raised-button [color]="isSelected? 'accent' : 'primary'">Select Plan</button>
+</div>

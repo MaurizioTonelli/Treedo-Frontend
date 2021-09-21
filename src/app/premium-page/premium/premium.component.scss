@@ -1,0 +1,22 @@
+@import "../../../global-colors";
+@import "../../../global-variables";
+
+.wrapper {
+  height: 100vh;
+  background-color: $treedo-branch;
+}
+
+.plans {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - #{$navbar-height});
+  position: relative;
+
+  h1 {
+    position: absolute;
+    top: 50px;
+    color: white;
+  }
+}

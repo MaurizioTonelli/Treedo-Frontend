@@ -9,6 +9,8 @@ import { ClearNavbarComponent } from './shared/clear-navbar/clear-navbar.compone
 import { WelcomeCardComponent } from './landing-page/welcome-card/welcome-card.component';
 import { ExampleSectionComponent } from './landing-page/example-section/example-section.component';
 import { LandingComponent } from './landing-page/landing/landing.component';
+import { PlanCardComponent } from './premium-page/plan-card/plan-card.component';
+import { PremiumComponent } from './premium-page/premium/premium.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { LandingComponent } from './landing-page/landing/landing.component';
     WelcomeCardComponent,
     ExampleSectionComponent,
     LandingComponent,
+    PlanCardComponent,
+    PremiumComponent,
   ],
   imports: [
     BrowserModule,
