@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap");
+@import "../../../global-colors";
+
+article {
+  display: flex;
+  flex-direction: row;
+  img {
+    max-width: 400px;
+    opacity: 0.5;
+    flex: 1;
+    margin: 5%;
+  }
+  .main-message {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      width: 60%;
+      line-height: 140%;
+      color: $treedo-branch;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    p {
+      width: 40%;
+      text-align: center;
+      line-height: 150%;
+      color: #444;
+    }
+    button {
+      margin-top: 20px;
+    }
+  }
+}

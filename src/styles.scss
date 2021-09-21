@@ -6,7 +6,90 @@
 // Include the common styles for Angular Material. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
 // Be sure that you only ever include this mixin once!
-@include mat.core();
+
+$custom-display-4: mat.define-typography-level(
+  $font-family: Offside,
+  $font-weight: 400,
+  $font-size: 112px,
+);
+$custom-display-3: mat.define-typography-level(
+  $font-family: Offside,
+  $font-weight: 400,
+  $font-size: 56px,
+);
+$custom-display-2: mat.define-typography-level(
+  $font-family: Offside,
+  $font-weight: 400,
+  $font-size: 45px,
+);
+$custom-display-1: mat.define-typography-level(
+  $font-family: Offside,
+  $font-weight: 400,
+  $font-size: 34px,
+);
+$custom-headline: mat.define-typography-level(
+  $font-family: Ubuntu,
+  $font-weight: 400,
+  $font-size: 28px,
+);
+$custom-title: mat.define-typography-level(
+  $font-family: Ubuntu,
+  $font-weight: 400,
+  $font-size: 24px,
+);
+$custom-subheading-2: mat.define-typography-level(
+  $font-family: Ubuntu,
+  $font-weight: 400,
+  $font-size: 20px,
+);
+$custom-subheading-1: mat.define-typography-level(
+  $font-family: Ubuntu,
+  $font-weight: 400,
+  $font-size: 20px,
+);
+$custom-body-1: mat.define-typography-level(
+  $font-family: Ubuntu,
+  $font-weight: 200,
+  $font-size: 1em,
+);
+$custom-body-2: mat.define-typography-level(
+  $font-family: Ubuntu,
+  $font-weight: 600,
+  $font-size: 1em,
+);
+$custom-caption: mat.define-typography-level(
+  $font-family: Ubuntu,
+  $font-weight: 300,
+  $font-size: 10px,
+);
+$custom-button: mat.define-typography-level(
+  $font-family: Ubuntu,
+  $font-weight: 400,
+  $font-size: 1em,
+);
+$custom-input: mat.define-typography-level(
+  $font-family: Ubuntu,
+  $font-weight: 400,
+  $font-size: 1em,
+);
+
+$custom-typography-config: mat.define-typography-config(
+  $display-4: $custom-display-4,
+  $display-3: $custom-display-3,
+  $display-2: $custom-display-2,
+  $display-1: $custom-display-1,
+  $headline: $custom-headline,
+  $title: $custom-title,
+  $subheading-2: $custom-subheading-2,
+  $subheading-1: $custom-subheading-1,
+  $body-1: $custom-body-1,
+  $body-2: $custom-body-2,
+  $caption: $custom-caption,
+  $button: $custom-button,
+  $input: $custom-input,
+);
+
+@include mat.core($custom-typography-config);
 
 $green-colors-palette: (
   50: #accabe,
