@@ -1,0 +1,100 @@
+@import "../../../global-colors";
+
+.header {
+  height: 400px;
+  position: relative;
+  background-color: $treedo-leaf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    color: white;
+  }
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url("/assets/images/table-background.jpeg");
+  opacity: 0.2;
+  background-size: cover;
+  object-fit: contain;
+}
+
+.social-links {
+  background-color: #eee;
+  padding: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .social-icons {
+    margin-top: 10px;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+  }
+  i {
+    font-size: 50px;
+    color: $treedo-leaf;
+  }
+  a:hover {
+    transform: scale(1.05);
+  }
+}
+
+.presentation-cards {
+  padding: 4% 10%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.more-questions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    margin-bottom: 40px;
+    color: $treedo-leaf;
+  }
+  button {
+    width: 200px;
+  }
+  margin-bottom: 50px;
+}
+
+.signup-promo {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $treedo-leaf;
+  height: 350px;
+  color: white;
+  button {
+    width: 200px;
+  }
+  h1 {
+    margin-bottom: 40px;
+  }
+  p {
+    margin-bottom: 30px;
+  }
+}
+.signup-promo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url("/assets/images/people-working.jpeg");
+  opacity: 0.2;
+  background-size: cover;
+  object-fit: contain;
+}

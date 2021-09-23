@@ -1,0 +1,21 @@
+<div class="card">
+    <img [src]="founderImg" alt="">
+    <div class="info">
+        <h1 >{{name}}, Co-founder</h1>
+        <h2>{{occupation}}</h2>
+        <p>
+            <ng-content></ng-content>
+        </p>
+        <div class="social-icons">
+            <a href="#" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </div>
+</div>

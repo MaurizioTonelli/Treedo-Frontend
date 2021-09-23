@@ -17,6 +17,9 @@ import { ContactFormComponent } from './contact-page/contact-form/contact-form.c
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatIconModule } from '@angular/material/icon';
+import { AboutComponent } from './about-us-page/about/about.component';
+import { PresentationCardComponent } from './about-us-page/presentation-card/presentation-card.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +33,8 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     ContactPageComponent,
     ContactComponent,
     ContactFormComponent,
+    AboutComponent,
+    PresentationCardComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,6 +43,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     MatButtonModule,
     MatInputModule,
     MatCheckboxModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
