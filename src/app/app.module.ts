@@ -10,7 +10,6 @@ import { ExampleSectionComponent } from './landing-page/example-section/example-
 import { LandingComponent } from './landing-page/landing/landing.component';
 import { PlanCardComponent } from './premium-page/plan-card/plan-card.component';
 import { PremiumComponent } from './premium-page/premium/premium.component';
-import { ContactPageComponent } from './contact-page/contact-page.component';
 import { ContactComponent } from './contact-page/contact/contact.component';
 import { ContactFormComponent } from './contact-page/contact-form/contact-form.component';
 
@@ -30,7 +29,6 @@ import { PresentationCardComponent } from './about-us-page/presentation-card/pre
     LandingComponent,
     PlanCardComponent,
     PremiumComponent,
-    ContactPageComponent,
     ContactComponent,
     ContactFormComponent,
     AboutComponent,

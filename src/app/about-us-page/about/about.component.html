@@ -1,4 +1,3 @@
-<app-clear-navbar></app-clear-navbar>
 <div class="header">
     <h1 class="mat-display-3">About us</h1>
 </div>
@@ -18,7 +17,7 @@
 </div>
 <div class="presentation-cards">
     <app-presentation-card name="Edgar Cetina" occupation="Data Analyst" founderImg="/assets/images/founders/EdgarCetina.jpg">
-        Lorem ipsum my name is Edgar Cetina and this is a dummy lorem ipsum text so that it looks like my caption is very deep.
+        Lorem ipsum my name is Edgar Cetina and I'm the founder of Verato
     </app-presentation-card>
     <app-presentation-card name="Maurizio Tonelli" occupation="Software Engineer" founderImg="/assets/images/founders/MaurizioTonelli.jpeg"> 
         For every project, there is always the question of where to start, and what to do next. My main objective is to build the tool to help you discover that answer for your own projects every day, and allow them to exceed all expectations.
@@ -26,7 +25,9 @@
 </div>
 <div class="more-questions">
     <h1 class="mat-display-1"> Have any questions?</h1>
-    <button mat-raised-button color="accent"> Contact us</button>
+    <a routerLink="/contact">
+        <button mat-raised-button color="accent" > Contact us</button>
+    </a>
 </div>
 <div class="signup-promo">
     <h1 class="mat-display-1">

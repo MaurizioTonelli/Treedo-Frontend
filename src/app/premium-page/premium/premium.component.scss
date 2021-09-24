@@ -2,7 +2,7 @@
 @import "../../../global-variables";
 
 .wrapper {
-  height: 100vh;
+  height: calc(100vh - #{$navbar-height});
   background-color: $treedo-branch;
 }
 
@@ -11,7 +11,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - #{$navbar-height});
+  height: 100%;
   position: relative;
 
   h1 {
