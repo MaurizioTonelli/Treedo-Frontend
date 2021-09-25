@@ -1,0 +1,55 @@
+<mat-dialog-content>
+    <div class="background-column"></div>
+    <div class="info-column">
+        <h1>{{login? 'Welcome back!' : 'Create a new account!'}}</h1>
+        <div class="third-party-auth">
+            <button mat-button-raised> <i class="fab fa-google google"></i> <p class="mat-body-2">Continue with Google</p> </button>
+            <button mat-button-raised><i class="fab fa-facebook facebook"></i> <p class="mat-body-2">Continue with Facebook</p> </button>
+            <button mat-button-raised><i class="fab fa-github github"></i><p class="mat-body-2">Continue with GitHub</p> </button>
+        </div>
+        <div class="divider">
+            <div class="line"></div>
+            <p>or </p>
+            <div class="line"></div>
+        </div>
+
+        <form>
+            <div class="two-inputs" *ngIf="!login">
+                <mat-form-field appearance="fill">
+                    <mat-label>First Name</mat-label>
+                    <input type="text" matInput>
+                </mat-form-field>
+                <mat-form-field appearance="fill">
+                    <mat-label>Last Name</mat-label>
+                    <input type="text" matInput>
+                </mat-form-field>
+            </div>
+            <mat-form-field appearance="fill">
+                <mat-label>Email address</mat-label>
+                <input type="text" matInput>
+            </mat-form-field>
+            <mat-form-field appearance="fill" *ngIf="login">
+                <mat-label>Password</mat-label>
+                <input type="password" matInput>
+            </mat-form-field>
+            <div class="two-inputs" *ngIf="!login">
+                <mat-form-field appearance="fill">
+                    <mat-label>Password</mat-label>
+                    <input type="password" matInput>
+                </mat-form-field>
+                <mat-form-field appearance="fill">
+                    <mat-label>Confirm Password</mat-label>
+                    <input type="password" matInput>
+                </mat-form-field>
+            </div>
+            <mat-checkbox *ngIf="login" class="mat-caption checkbox" color="primary">Keep me logged in </mat-checkbox>
+            <p *ngIf="!login" class="mat-caption" >Password has to fullfill requisites <i class="fas fa-info-circle" matTooltip="Password must be at least 8 characters long, must contain numbers and both lowercase and uppercase characters"></i></p>
+            <button mat-raised-button color="primary" >{{login ? 'Login' : 'Sign up'}}</button>
+        </form>
+
+        <div class="extra-links">
+            <a href="" *ngIf="login">Forgot password?</a>
+            <p>{{login? 'Not a member?' : 'Already a member?'}} <a href="" (click)="login? setToSignup($event) : setToLogin($event)">{{login? 'Sign up' : 'Login'}}</a></p>
+        </div>
+    </div>
+</mat-dialog-content>

@@ -1,0 +1,109 @@
+@import "../../global-colors";
+
+mat-dialog-content {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  overflow-y: hidden;
+  max-height: 700px;
+}
+
+a {
+  text-decoration: none;
+  color: $treedo-leaf;
+}
+.background-column {
+  background: linear-gradient($treedo-dry-leaf, $treedo-leaf);
+  flex: 1;
+}
+.info-column {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient($treedo-branch, $treedo-trunk);
+  padding: 30px;
+
+  form {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    color: white;
+    margin: 10px;
+    button {
+      margin: 15px 0px;
+    }
+
+    .two-inputs {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      mat-form-field {
+        width: 46%;
+      }
+    }
+  }
+  .third-party-auth {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+
+    button {
+      padding: 12px 18px;
+      border: 1px solid #666;
+      border-radius: 15px;
+      background-color: rgba(#fff, 0.5);
+      margin: 4px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.2s ease-in-out;
+      p {
+        margin: 0;
+      }
+      i {
+        font-size: 20px;
+        margin-right: 10px;
+      }
+      i.google {
+        color: #1aa260;
+      }
+      i.facebook {
+        color: #3b5998;
+      }
+      i.github {
+        color: black;
+      }
+      &:hover {
+        background-color: rgba(#fff, 0.8);
+        cursor: pointer;
+      }
+    }
+  }
+
+  .divider {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 40%;
+    margin: 15px;
+    .line {
+      background-color: white;
+      height: 2px;
+      width: 25%;
+    }
+    p {
+      margin: 0;
+    }
+  }
+}
+.extra-links {
+  display: flex;
+  flex-direction: column;
+  * {
+    margin: 6px;
+  }
+}
