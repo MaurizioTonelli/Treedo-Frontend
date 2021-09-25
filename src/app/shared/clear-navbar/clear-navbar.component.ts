@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
-import { LoginComponent } from 'src/app/login/login.component';
+import { DialogService } from 'src/app/services/dialog.service';
 
 @Component({
   selector: 'app-clear-navbar',
@@ -8,16 +7,14 @@ import { LoginComponent } from 'src/app/login/login.component';
   styleUrls: ['./clear-navbar.component.scss'],
 })
 export class ClearNavbarComponent implements OnInit {
-  constructor(public dialog: MatDialog) {}
+  constructor(private dialogs: DialogService) {}
 
   ngOnInit(): void {}
 
   openLogin() {
-    const dialogRef = this.dialog.open(LoginComponent);
+    this.dialogs.openLogin();
   }
   openSignup() {
-    const dialogRef = this.dialog.open(LoginComponent, {
-      data: { login: false },
-    });
+    this.dialogs.openSignup();
   }
 }
