@@ -9,6 +9,10 @@ mat-dialog-content {
   overflow-y: hidden;
   max-height: 700px;
 }
+::ng-deep .mat-form-field-label {
+  /*change input label color*/
+  color: rgba(white, 0.5) !important;
+}
 
 a {
   text-decoration: none;
