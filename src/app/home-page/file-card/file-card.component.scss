@@ -1,0 +1,61 @@
+@import "../../../global-colors";
+
+.wrapper {
+  border: 1px solid rgb(190, 190, 190);
+  border-radius: 16px;
+  width: 250px;
+  margin: 10px;
+
+  &:hover {
+    cursor: pointer;
+  }
+  &:hover .info {
+    background-color: rgb(238, 236, 236);
+  }
+}
+
+.preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #eee;
+  height: 160px;
+  border-radius: 16px 16px 0px 0px;
+  mat-icon {
+    font-size: 28px;
+    color: $treedo-leaf;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    &:hover {
+      cursor: pointer;
+      color: $treedo-leaf;
+    }
+  }
+  img {
+    max-width: 140px;
+    max-height: 140px;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px;
+  border-top: 1px solid rgb(190, 190, 190);
+  transition: all 0.3s ease-in-out;
+  border-radius: 0px 0px 16px 16px;
+  h1 {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  p {
+    font-size: 12px;
+  }
+  img {
+    max-width: 40px;
+    margin-right: 20px;
+  }
+}

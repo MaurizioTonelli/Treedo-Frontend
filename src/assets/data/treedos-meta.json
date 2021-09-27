@@ -1,0 +1,64 @@
+{
+    "data": [
+        {
+            "type": "folder",
+            "fileName": "My best treedos",
+            "lastEdited": "29/06/1997",
+            "createdAt": "28/06/1997"
+        },
+        {
+            "type": "folder",
+            "fileName": "Personal projects",
+            "lastEdited": "29/06/1997",
+            "createdAt": "28/06/1997"
+        },
+        {
+            "type": "treedo",
+            "fileName": "Treedo 1 - New",
+            "lastEdited": "29/06/1997",
+            "createdAt": "28/06/1997",
+            "participants": [
+                {"email": "mauriziotonelli@hotmail.com"},
+                {"email": "edstainer@gmail.com"},
+                {"email": "a@a.com"},
+                {"email": "a@a.com"}
+            ]
+        },
+        {
+            "type": "treedo",
+            "fileName": "Treedo 2 - New",
+            "lastEdited": "29/06/1997",
+            "createdAt": "28/06/1997",
+            "participants": [
+                {"email": "mauriziotonelli@hotmail.com"},
+                {"email": "edstainer@gmail.com"},
+                {"email": "edstainer@gmail.com"},
+                {"email": "edstainer@gmail.com"},
+                {"email": "a@a.com"}
+            ]
+        },
+        {
+            "type": "treedo",
+            "fileName": "Treedo 3 - New",
+            "lastEdited": "29/06/1997",
+            "createdAt": "28/06/1997",
+            "participants": [
+                {"email": "mauriziotonelli@hotmail.com"},
+                {"email": "edstainer@gmail.com"},
+                {"email": "a@a.com"}
+            ]
+        },
+        {
+            "type": "treedo",
+            "fileName": "Treedo 4 - New",
+            "lastEdited": "29/06/1997",
+            "createdAt": "28/06/1997",
+            "participants": [
+                {"email": "mauriziotonelli@hotmail.com"},
+                {"email": "edstainer@gmail.com"},
+                {"email": "a@a.com"}
+            ]
+        }
+        
+    ]
+}

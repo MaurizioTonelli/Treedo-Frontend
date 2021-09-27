@@ -1,0 +1,13 @@
+<div class="wrapper">
+    <div class="preview">
+        <img [src]="thumbnailUrl" alt="">
+        <mat-icon>people</mat-icon>
+    </div>
+    <div class="info"> 
+        <img *ngIf="file && file.type === 'treedo'" [src]="iconUrl" alt="">
+        <div class="data" *ngIf="file">
+            <h1>{{file.fileName}}</h1>
+            <p>Edited at {{file.lastEdited}}</p>
+        </div>
+    </div>
+</div>

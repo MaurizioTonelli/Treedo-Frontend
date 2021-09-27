@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ClearNavbarComponent } from './shared/clear-navbar/clear-navbar.component';
@@ -26,6 +27,9 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { AboutComponent } from './about-us-page/about/about.component';
 import { PresentationCardComponent } from './about-us-page/presentation-card/presentation-card.component';
 import { LoginComponent } from './login/login.component';
+import { DarkNavbarComponent } from './shared/dark-navbar/dark-navbar.component';
+import { HomeComponent } from './home-page/home/home.component';
+import { FileCardComponent } from './home-page/file-card/file-card.component';
 
 @NgModule({
   declarations: [
@@ -41,10 +45,14 @@ import { LoginComponent } from './login/login.component';
     AboutComponent,
     PresentationCardComponent,
     LoginComponent,
+    DarkNavbarComponent,
+    HomeComponent,
+    FileCardComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     MatButtonModule,
     MatInputModule,
