@@ -8,6 +8,7 @@ import { TreedoMetaInfo } from '../TreedoMetaInfo';
 })
 export class FileCardComponent implements OnInit {
   @Input('file') file: TreedoMetaInfo = null;
+  @Input('gridView') gridView: boolean = true;
 
   thumbnailUrl: string = '';
   iconUrl: string = '';

@@ -1,10 +1,10 @@
-<div class="wrapper">
-    <div class="preview">
+<div [ngClass]="gridView ? 'grid-view-wrapper': 'list-view-wrapper'">
+    <div class="preview" *ngIf="gridView">
         <img [src]="thumbnailUrl" alt="">
         <mat-icon>people</mat-icon>
     </div>
     <div class="info"> 
-        <img *ngIf="file && file.type === 'treedo'" [src]="iconUrl" alt="">
+        <img *ngIf="file && file.type === 'treedo' || !gridView" [src]="iconUrl" alt="">
         <div class="data" *ngIf="file">
             <h1>{{file.fileName}}</h1>
             <p>Edited at {{file.lastEdited}}</p>

@@ -9,6 +9,7 @@ import { TreedoMetaInfo } from '../TreedoMetaInfo';
 })
 export class HomeComponent implements OnInit {
   files: TreedoMetaInfo[] = [];
+  gridView: boolean = true;
 
   constructor(private http: HttpClient) {}
 
@@ -18,5 +19,13 @@ export class HomeComponent implements OnInit {
       .subscribe((data: { data: TreedoMetaInfo[] }) => {
         this.files = data.data;
       });
+  }
+
+  setGridView() {
+    this.gridView = true;
+  }
+
+  setListView() {
+    this.gridView = false;
   }
 }

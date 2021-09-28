@@ -3,11 +3,10 @@
         <p>My Treedos</p><span>></span>
     </div>
     <div class="view-options">
-        <mat-icon>view_list</mat-icon>
-        <mat-icon>grid_view</mat-icon>
+        <mat-icon (click)="setListView()">view_list</mat-icon>
+        <mat-icon (click)="setGridView()">grid_view</mat-icon>
     </div>
 </div>
-<div class="file-cards">
-    <app-file-card *ngFor="let file of files" [file]="file" ></app-file-card>
-
+<div [ngClass]="gridView? 'file-cards' : 'file-list'">
+    <app-file-card *ngFor="let file of files" [file]="file" [gridView]="gridView"></app-file-card>
 </div>
