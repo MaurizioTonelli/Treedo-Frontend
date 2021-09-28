@@ -23,6 +23,8 @@ import {
   MAT_DIALOG_DEFAULT_OPTIONS,
 } from '@angular/material/dialog';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatSelectModule } from '@angular/material/select';
+import { MatRadioModule } from '@angular/material/radio';
 
 import { AboutComponent } from './about-us-page/about/about.component';
 import { PresentationCardComponent } from './about-us-page/presentation-card/presentation-card.component';
@@ -30,6 +32,7 @@ import { LoginComponent } from './login/login.component';
 import { DarkNavbarComponent } from './shared/dark-navbar/dark-navbar.component';
 import { HomeComponent } from './home-page/home/home.component';
 import { FileCardComponent } from './home-page/file-card/file-card.component';
+import { PaymentComponent } from './payment-page/payment/payment.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +51,7 @@ import { FileCardComponent } from './home-page/file-card/file-card.component';
     DarkNavbarComponent,
     HomeComponent,
     FileCardComponent,
+    PaymentComponent,
   ],
   imports: [
     BrowserModule,
@@ -60,6 +64,8 @@ import { FileCardComponent } from './home-page/file-card/file-card.component';
     MatIconModule,
     MatDialogModule,
     MatTooltipModule,
+    MatSelectModule,
+    MatRadioModule,
   ],
   providers: [
     {

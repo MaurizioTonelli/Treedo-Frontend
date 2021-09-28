@@ -1,0 +1,111 @@
+<div class="wrapper">
+    <div class="payment-actions">
+        <div class="plan-options">
+            <div class="plan-option-card">
+                <h1>Monthly</h1>
+                <div class="price">
+                    <p>$</p>
+                    <h1>4</h1>
+                    <p>.99/mo</p>
+                </div>
+                <p>Billed once a month</p>
+            </div>
+            <div class="plan-option-card">
+                <h1>Semi-Annually</h1>
+                <div class="price">
+                    <p>$</p>
+                    <h1>3</h1>
+                    <p>.99/mo</p>
+                </div>
+                <p>$23.94 billed every 6 months</p>
+            </div>
+            <div class="plan-option-card">
+                <h1>Annually</h1>
+                <div class="price">
+                    <p>$</p>
+                    <h1>2</h1>
+                    <p>.99/mo</p>
+                </div>
+                <p>$35.88 billed every 6 months</p>
+            </div>
+        </div>
+        <div class="payment-form">
+            <mat-form-field appearance="fill">
+                <mat-label>Country</mat-label>
+                <mat-select>
+                  <mat-option>
+                    Mexico
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+ 
+            <mat-radio-group aria-label="Select an option" class="card-type">
+                <div class="payment-card">
+                    <mat-radio-button value="1" class="payment-card">Credit/debit card</mat-radio-button>
+                    <img src="/assets/images/icons/visa-logo.png" alt="">
+                    <img src="/assets/images/icons/mastercard-logo.png" alt="">
+                </div>
+                <div class="payment-card">
+                    <mat-radio-button value="2" class="payment-card">
+                        PayPal
+                    </mat-radio-button>
+                    <img src="/assets/images/icons/paypal-logo.png" alt="">
+                </div>
+
+            </mat-radio-group>
+
+
+            <div class="card-info-form">
+                <form>
+                    <mat-form-field class="form-field" appearance="fill">
+                        <mat-label>Name on the plan-option-card</mat-label>
+                        <input type="text" matInput>
+                    </mat-form-field>
+                    <mat-form-field class="form-field" appearance="fill">
+                        <mat-label>Number on the card</mat-label>
+                        <input type="text" matInput>                    
+                    </mat-form-field>
+                    <div class="card-info">
+                        <mat-form-field class="form-field" appearance="fill">
+                            <mat-label>MM</mat-label>
+                            <input type="text" matInput>                        
+                        </mat-form-field>
+                        <mat-form-field class="form-field" appearance="fill">
+                            <mat-label>YYYY</mat-label>
+                            <input type="text" matInput>                       
+                        </mat-form-field>
+                        <mat-form-field class="form-field" appearance="fill">
+                            <mat-label>CCV</mat-label>
+                            <input type="text" matInput>                       
+                        </mat-form-field>
+                    </div>
+                    <mat-checkbox color="primary">I have read and agree with <a href="">Treedo's Terms of service</a>  and <a href="">Privacy policy</a> </mat-checkbox>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="payment-preview">
+        <div class="order-summary">
+            <h1>ORDER SUMMARY</h1>
+            <div class="header">
+                <div class="titles">
+                    <p>You chose</p>
+                    Monthly subscription
+                </div>
+                <div class="totals">
+                    <p class="mat-body-2">Total</p>
+                    <p>$4.99 USD</p>
+                </div>
+            </div>
+            <div class="info">
+                <p>
+                    Treedo is obligated by law to collect taxes over transaction completed under certain fiscal policies.
+                </p>
+                <p>
+                    Upon completing your payment, you accept these Terms and Conditions
+                </p>
+                <button mat-raised-button color="primary">FINISH PAYMENT</button>
+            </div>
+        </div>
+    </div>
+</div>
