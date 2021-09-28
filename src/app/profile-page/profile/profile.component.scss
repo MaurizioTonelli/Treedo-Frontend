@@ -1,0 +1,46 @@
+@import "../../../global-variables";
+@import "../../../global-colors";
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.content {
+  overflow-y: auto;
+  height: calc(100vh - #{$navbar_height});
+  width: 100%;
+}
+
+.sidenav {
+  width: 300px;
+  height: calc(100vh - #{$navbar_height});
+  border-right: 1px solid rgb(219, 219, 219);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    max-width: 120px;
+    clip-path: circle();
+  }
+  .menu {
+    margin-top: 15px;
+    width: 100%;
+    ul {
+      list-style: none;
+      padding: 0;
+      li {
+        padding: 15px;
+        &:hover {
+          cursor: pointer;
+          background-color: #777;
+          color: white;
+        }
+      }
+      li.selected {
+        background-color: $treedo-trunk;
+        color: white;
+      }
+    }
+  }
+}

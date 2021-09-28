@@ -6,6 +6,7 @@ import { HomeComponent } from './home-page/home/home.component';
 import { LandingComponent } from './landing-page/landing/landing.component';
 import { PaymentComponent } from './payment-page/payment/payment.component';
 import { PremiumComponent } from './premium-page/premium/premium.component';
+import { ProfileComponent } from './profile-page/profile/profile.component';
 
 const routes: Routes = [
   { path: '', component: LandingComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'home', component: HomeComponent },
   { path: 'payment', component: PaymentComponent },
+  { path: 'profile', component: ProfileComponent },
 ];
 
 @NgModule({

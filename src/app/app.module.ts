@@ -25,6 +25,7 @@ import {
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatSelectModule } from '@angular/material/select';
 import { MatRadioModule } from '@angular/material/radio';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 import { AboutComponent } from './about-us-page/about/about.component';
 import { PresentationCardComponent } from './about-us-page/presentation-card/presentation-card.component';
@@ -33,6 +34,7 @@ import { DarkNavbarComponent } from './shared/dark-navbar/dark-navbar.component'
 import { HomeComponent } from './home-page/home/home.component';
 import { FileCardComponent } from './home-page/file-card/file-card.component';
 import { PaymentComponent } from './payment-page/payment/payment.component';
+import { ProfileComponent } from './profile-page/profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +54,7 @@ import { PaymentComponent } from './payment-page/payment/payment.component';
     HomeComponent,
     FileCardComponent,
     PaymentComponent,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,
@@ -66,6 +69,7 @@ import { PaymentComponent } from './payment-page/payment/payment.component';
     MatTooltipModule,
     MatSelectModule,
     MatRadioModule,
+    MatSidenavModule,
   ],
   providers: [
     {
