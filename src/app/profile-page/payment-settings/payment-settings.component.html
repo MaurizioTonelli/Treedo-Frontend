@@ -1,1 +1,51 @@
-<p>payment-settings works!</p>
+<div class="container">
+    <div class="title">
+        <h1>Payment methods</h1>   
+        <p>Register your payment methods</p>
+    </div>
+
+    <div class="cards">
+        <div class="payment-methods">
+            <h1>Payment methods</h1>
+            <div class="card-header">
+                <h2>Card</h2>
+                <img src="/assets/images/icons/visa-logo.png" alt="">
+            </div>
+            <div class="card-info-form">
+                <mat-form-field>
+                    <label> Your Card Number</label>
+                    <input type="text" matInput>
+                </mat-form-field>
+                <button mat-raised-button color="primary">Edit</button>
+                <button mat-button color="warn">Delete</button>
+            </div>
+            <div class="paypal-header">
+                <h2>PayPal Account</h2>
+                <img src="" alt="">
+            </div>
+            <div class="paypal-info-form">
+                <p>yourname@domain.com</p>
+                <button mat-button color="warn">Delete</button>
+            </div>
+            <p class="mat-caption caption-info">Your payment information is stored securely. <a href="">Learn more</a></p>
+        </div>
+        <div class="subscription-details">
+            <h1>Your subscription</h1>
+            <div class="current-plan">
+                <p>Current plan</p>
+                <p class="mat-body-2">Monthly subscription</p>
+            </div>
+            <p class="mat-caption"> Your next payment is due: August 31, 2021</p>
+            <div class="payment-method">
+                <p>Payment method</p>
+                <img src="" alt="">
+                <p>**** **** **** 7283</p>
+            </div>
+            <div class="actions">
+                <button mat-raised-button color="primary">Change subscription plan</button>
+                <button mat-button color="warn">Cancel subscription</button>
+            </div>
+
+        </div>
+    </div>
+</div>
