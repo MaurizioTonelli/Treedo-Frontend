@@ -1,0 +1,51 @@
+<div class="container">
+    <div class="title">
+        <h1>Account</h1>
+        <p>Modify your account data</p>
+    </div>
+    <div class="basic-info-form">
+        <form >
+            <mat-form-field>
+                <mat-label>Modify your email</mat-label>
+                <input type="text" matInput>
+            </mat-form-field>
+            <div class="full-name">
+                <mat-form-field>
+                    <mat-label>First Name</mat-label>
+                    <input type="text" matInput>
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Last Name</mat-label>
+                    <input type="text" matInput>
+                </mat-form-field>
+            </div>
+            <button mat-raised-button color="primary">Save</button>
+        </form>
+    </div>
+    <div class="change-password-form">
+        <form >
+            <h2>Change your password</h2>
+            <mat-form-field>
+                <mat-label>Current Password</mat-label>
+                <input type="text" matInput>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>New Password</mat-label>
+                <input type="text" matInput>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Confirm New Password</mat-label>
+                <input type="text" matInput>
+            </mat-form-field>
+            <button mat-raised-button color="accent">Change password</button>
+            <p class="mat-caption" >Password has to fullfill requisites <i class="fas fa-info-circle" matTooltip="Password must be at least 8 characters long, must contain numbers and both lowercase and uppercase characters"></i></p>
+        </form>
+    </div>
+    <div class="delete-account">
+        <div class="form">
+            <h2>Delete account</h2>
+            <p>By deleting your account, your saved treedos will be deleted and your participation in collaborative treedos will disappear</p>
+            <button mat-raised-button color="warn">Delete Account</button>
+        </div>
+    </div>
+</div>

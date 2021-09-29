@@ -1,0 +1,72 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+  .basic-info-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    form {
+      width: 60%;
+      margin: 15px;
+      padding: 20px 0px;
+      display: flex;
+      flex-direction: column;
+      .full-name {
+        display: flex;
+        justify-content: space-between;
+        mat-form-field {
+          width: 40%;
+        }
+      }
+      button {
+        width: 20%;
+        align-self: flex-end;
+      }
+    }
+  }
+  .change-password-form {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    form {
+      padding: 20px 0px;
+      width: 60%;
+      margin: 15px;
+      display: flex;
+      flex-direction: column;
+      p {
+        margin-top: 20px;
+      }
+      button {
+        align-self: flex-end;
+      }
+    }
+  }
+  .delete-account {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    .form {
+      width: 60%;
+      padding: 20px 0px;
+      display: flex;
+      flex-direction: column;
+      p {
+        line-height: 145%;
+      }
+      button {
+        align-self: flex-end;
+      }
+    }
+  }
+}

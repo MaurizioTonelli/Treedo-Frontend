@@ -35,6 +35,9 @@ import { HomeComponent } from './home-page/home/home.component';
 import { FileCardComponent } from './home-page/file-card/file-card.component';
 import { PaymentComponent } from './payment-page/payment/payment.component';
 import { ProfileComponent } from './profile-page/profile/profile.component';
+import { PaymentSettingsComponent } from './profile-page/payment-settings/payment-settings.component';
+import { AccountSettingsComponent } from './profile-page/account-settings/account-settings.component';
+import { NotificationsSettingsComponent } from './profile-page/notifications-settings/notifications-settings.component';
 
 @NgModule({
   declarations: [
@@ -55,6 +58,9 @@ import { ProfileComponent } from './profile-page/profile/profile.component';
     FileCardComponent,
     PaymentComponent,
     ProfileComponent,
+    PaymentSettingsComponent,
+    AccountSettingsComponent,
+    NotificationsSettingsComponent,
   ],
   imports: [
     BrowserModule,

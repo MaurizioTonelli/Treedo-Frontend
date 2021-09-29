@@ -5,14 +5,16 @@
         </div>
         <div class="menu">
             <ul>
-                <li class="selected">Account</li>
-                <li>Payment</li>
-                <li>Notifications</li>
+                <li [ngClass]="tab === 'account' ? 'selected' : ''" (click)="selectAccountTab()">Account</li>
+                <li [ngClass]="tab === 'payment' ? 'selected' : ''" (click)="selectPaymentTab()">Payment</li>
+                <li [ngClass]="tab === 'notifications' ? 'selected' : ''" (click)="selectNotificationsTab()">Notifications</li>
             </ul>
         </div>
     </div>
     <div class="content">
-        
+        <app-account-settings *ngIf="tab === 'account'"></app-account-settings>
+        <app-notifications-settings *ngIf="tab === 'notifications'"></app-notifications-settings>
+        <app-payment-settings *ngIf="tab === 'payment'"></app-payment-settings>
     </div>
 
 </div>

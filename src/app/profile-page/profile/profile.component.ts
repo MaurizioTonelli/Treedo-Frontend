@@ -6,8 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./profile.component.scss'],
 })
 export class ProfileComponent implements OnInit {
-  tab: string = '';
+  tab: string = 'account';
   constructor() {}
 
   ngOnInit(): void {}
+
+  selectAccountTab() {
+    this.tab = 'account';
+  }
+  selectPaymentTab() {
+    this.tab = 'payment';
+  }
+  selectNotificationsTab() {
+    this.tab = 'notifications';
+  }
 }
